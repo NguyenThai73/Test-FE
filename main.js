@@ -62,4 +62,4 @@ function khac(){
     c[0].style.display ='none';
     d[0].style.display ='none';
     e[0].style.display ='flex';
-}
+};

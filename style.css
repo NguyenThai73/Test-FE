@@ -30,6 +30,8 @@ a{
     margin-top: 1%;
     position: absolute;
     left: 2.6%;
+    border:0;
+    border-radius: 3px;
 }
 .header__logo-link{
     display: block;
@@ -86,6 +88,7 @@ a{
 .content__link{
     height: 4%;
     margin-left: 3%;
+
 }
 .content__link-home,
 .content__link-location{
@@ -96,6 +99,8 @@ a{
     line-height: 192%;
     width: 10%;
     height: 82%;
+    border: 0;
+    border-radius: 3px;
 }
 .content__link-location{
     width: 15%;
@@ -112,6 +117,8 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around  ;
+    border:0;
+    border-radius: 6px;
     /* overflow: scroll;     */
     /* display: none; */
 }
