@@ -10,35 +10,373 @@
 </head>
 <body>
     <div class="main">
-        <!-- Foooter -->
-        <div class="footer">
-            <div class="footer__logo">
-                <a href="#" class="footer__logo-link">
+        <!-- head -->
+        <div class="header">
+            <div class="header__logo">
+                <a href="#" class="header__logo-link">
                     <!-- <img src="./Logo2.png" alt="logo" class="footer__logo-img"> -->
                 </a>
             </div>
-            <div class="footer__info">
-                <a href="#" class="footer__info-link"><i class='bx bx-icon bxl-facebook-circle bx-tada' ></i></a>
-                <a href="#" class="footer__info-link"><i class='bx bx-icon bxl-instagram-alt bx-tada' ></i></a>
-                <a href="#" class="footer__info-link"><i class='bx bx-icon bxl-twitter bx-tada bx-rotate-90' ></i></a>
-                <!-- <div class="footer__info-link"></div>
-                <div class="footer__info-link"></div>
-                <div class="footer__info-link"></div> -->
+            <div class="header__info">
+                <a href="#" class="header__info-link"><i class='bx bx-icon bx-search-alt-2 bx-tada bx-rotate-180' ></i></a>
+                <a href="#" class="header__info-link"><i class='bx bx-icon bx-cart-add bx-tada bx-rotate-180' ></i></a>
+                <a href="#" class="header__info-link"><i class='bx bx-icon bxs-user-account bx-tada bx-rotate-180' ></i></a>
             </div>
         </div>
         <!-- Container -->
         <div class="container">
             <!-- Sidebar -->
             <div class="sidebar">
-                <a href="#" class="sidebar__menu">GAMING GEAR</a>
-                <a href="#" class="sidebar__menu">PHỤ KIỆN MÁY TÍNH</a>
-                <a href="#" class="sidebar__menu">MÔ HÌNH</a>
-                <a href="#" class="sidebar__menu">BÀN GHẾ GAMING</a>
-                <a href="#" class="sidebar__menu">SẢN PHẨM KHÁC</a>
+                <a href="#" onclick="gamingGear()" class="sidebar__menu">GAMING GEAR</a>
+                <a href="#" onclick="phuKienMt()" class="sidebar__menu">PHỤ KIỆN MÁY TÍNH</a>
+                <a href="#" onclick="moHinh()" class="sidebar__menu">MÔ HÌNH</a>
+                <a href="#" onclick="banGheG()" class="sidebar__menu">BÀN GHẾ GAMING</a>
+                <a href="#" onclick="khac()" class="sidebar__menu">SẢN PHẨM KHÁC</a>
             </div>
             <!-- Content -->
             <div class="content">
-                <div></div>
+                <div class="content__link">
+                    <a href="#" class="content__link-home">TRANG CHỦ</a>
+                    <span>/</span>
+                    <p id="location" class="content__link-location">GAMING GEAR</p>
+                </div>
+                <!-- game-gear -->
+                <div class="content__products1">
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/04/175903210_876450246546018_7851790532800561341_n-768x768.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">NÚT KEYCAP ESC VEGETA</a>
+                        <p class="content__product-rate">40,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/04/175695004_2999603333606395_7270869608408533900_n-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">NÚT KEYCAP ESC DOREMON</a>
+                        <p class="content__product-rate">40,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/04/175903210_876450246546018_7851790532800561341_n-768x768.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">NÚT KEYCAP ESC VEGETA</a>
+                        <p class="content__product-rate">40,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/04/175695004_2999603333606395_7270869608408533900_n-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">NÚT KEYCAP ESC DOREMON</a>
+                        <p class="content__product-rate">40,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/04/175903210_876450246546018_7851790532800561341_n-768x768.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">NÚT KEYCAP ESC VEGETA</a>
+                        <p class="content__product-rate">40,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/04/175695004_2999603333606395_7270869608408533900_n-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">NÚT KEYCAP ESC DOREMON</a>
+                        <p class="content__product-rate">40,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/04/175903210_876450246546018_7851790532800561341_n-768x768.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">NÚT KEYCAP ESC VEGETA</a>
+                        <p class="content__product-rate">40,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/04/175695004_2999603333606395_7270869608408533900_n-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">NÚT KEYCAP ESC DOREMON</a>
+                        <p class="content__product-rate">40,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                </div> 
+                <!-- phụ kiện máy tính  -->
+                <div class="content__products2">
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2022/01/Microphone-Thronmax-Mdrill-Dome-M3-Jet-Black_thronmax_vn-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">MICROPHONE THRONMAX MDRILL DOME M3</a>
+                        <p class="content__product-rate">1,490,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2020/01/2267b135d551bf6697106d3bc8ed8bcb-1-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">TAI NGHE E-DRA EH401 LED RGB</a>
+                        <p class="content__product-rate">240,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2022/01/Microphone-Thronmax-Mdrill-Dome-M3-Jet-Black_thronmax_vn-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">MICROPHONE THRONMAX MDRILL DOME M3</a>
+                        <p class="content__product-rate">1,490,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2020/01/2267b135d551bf6697106d3bc8ed8bcb-1-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">TAI NGHE E-DRA EH401 LED RGB</a>
+                        <p class="content__product-rate">240,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2022/01/Microphone-Thronmax-Mdrill-Dome-M3-Jet-Black_thronmax_vn-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">MICROPHONE THRONMAX MDRILL DOME M3</a>
+                        <p class="content__product-rate">1,490,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2020/01/2267b135d551bf6697106d3bc8ed8bcb-1-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">TAI NGHE E-DRA EH401 LED RGB</a>
+                        <p class="content__product-rate">240,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2022/01/Microphone-Thronmax-Mdrill-Dome-M3-Jet-Black_thronmax_vn-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">MICROPHONE THRONMAX MDRILL DOME M3</a>
+                        <p class="content__product-rate">1,490,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2020/01/2267b135d551bf6697106d3bc8ed8bcb-1-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">TAI NGHE E-DRA EH401 LED RGB</a>
+                        <p class="content__product-rate">240,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                </div> 
+                <!-- mô hình -->
+                <div class="content__products3">
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2017/10/146263672_136737938207385_1129441152247976672_n-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">MÔ HÌNH BAYMAX LẮC ĐẦU 10CM</a>
+                        <p class="content__product-rate">80,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2017/10/144895092_260789355397314_8128278228689702332_n-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">MÔ HÌNH CAPTAIN AMERICA</a>
+                        <p class="content__product-rate">90,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2017/10/146263672_136737938207385_1129441152247976672_n-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">MÔ HÌNH BAYMAX LẮC ĐẦU 10CM</a>
+                        <p class="content__product-rate">80,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2017/10/144895092_260789355397314_8128278228689702332_n-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">MÔ HÌNH CAPTAIN AMERICA</a>
+                        <p class="content__product-rate">90,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2017/10/146263672_136737938207385_1129441152247976672_n-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">MÔ HÌNH BAYMAX LẮC ĐẦU 10CM</a>
+                        <p class="content__product-rate">80,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2017/10/144895092_260789355397314_8128278228689702332_n-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">MÔ HÌNH CAPTAIN AMERICA</a>
+                        <p class="content__product-rate">90,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2017/10/146263672_136737938207385_1129441152247976672_n-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">MÔ HÌNH BAYMAX LẮC ĐẦU 10CM</a>
+                        <p class="content__product-rate">80,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2017/10/144895092_260789355397314_8128278228689702332_n-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">MÔ HÌNH CAPTAIN AMERICA</a>
+                        <p class="content__product-rate">90,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                </div>
+
+                <!-- bàn ghế gaming  -->
+                <div class="content__products4">
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/03/ban-hong-2-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">BÀN E-DRA Z-TANK V2 HỒNG</a>
+                        <p class="content__product-rate">1,400,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/10/337_9-768x768.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">GHẾ E-DRA IRIS EGC228 HỒNG</a>
+                        <p class="content__product-rate">4,100,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/03/ban-hong-2-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">BÀN E-DRA Z-TANK V2 HỒNG</a>
+                        <p class="content__product-rate">1,400,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/10/337_9-768x768.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">GHẾ E-DRA IRIS EGC228 HỒNG</a>
+                        <p class="content__product-rate">4,100,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/03/ban-hong-2-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">BÀN E-DRA Z-TANK V2 HỒNG</a>
+                        <p class="content__product-rate">1,400,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/10/337_9-768x768.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">GHẾ E-DRA IRIS EGC228 HỒNG</a>
+                        <p class="content__product-rate">4,100,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/03/ban-hong-2-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">BÀN E-DRA Z-TANK V2 HỒNG</a>
+                        <p class="content__product-rate">1,400,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/10/337_9-768x768.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">GHẾ E-DRA IRIS EGC228 HỒNG</a>
+                        <p class="content__product-rate">4,100,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                </div> 
+
+                <!-- Khác  -->
+                <div class="content__products5">
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/07/Akus-A3-3-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">CÁP DA TYPE-C 1M AKUS A3</a>
+                        <p class="content__product-rate">90,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/07/Akus-A3-3-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">CÁP DA TYPE-C 1M AKUS A3</a>
+                        <p class="content__product-rate">90,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/07/Akus-A3-3-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">CÁP DA TYPE-C 1M AKUS A3</a>
+                        <p class="content__product-rate">90,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/07/Akus-A3-3-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">CÁP DA TYPE-C 1M AKUS A3</a>
+                        <p class="content__product-rate">90,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/07/Akus-A3-3-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">CÁP DA TYPE-C 1M AKUS A3</a>
+                        <p class="content__product-rate">90,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/07/Akus-A3-3-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">CÁP DA TYPE-C 1M AKUS A3</a>
+                        <p class="content__product-rate">90,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/07/Akus-A3-3-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">CÁP DA TYPE-C 1M AKUS A3</a>
+                        <p class="content__product-rate">90,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                    <div class="content__product">
+                        <a  href="#" class="content__product-image">
+                            <img src="https://lacdau.com/wp-content/uploads/2021/07/Akus-A3-3-600x600.jpg" alt="" class="content__product-img">
+                        </a>
+                        <a href="#" class="content__product-desc">CÁP DA TYPE-C 1M AKUS A3</a>
+                        <p class="content__product-rate">90,000đ</p>
+                        <button class="content__product-buy">MUA</button>
+                    </div>
+                </div> 
             </div>
         </div>
     </div> 
